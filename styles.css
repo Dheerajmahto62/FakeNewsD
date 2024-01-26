@@ -1,0 +1,317 @@
+/* styles.css */
+/* header { */
+  /* background-color: whitesmoke; */
+  /* color: #222; */
+  /* padding-top: 10px;
+  padding-bottom: 10px; */
+  
+/* } */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins' , sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;  
+}
+
+.logo img {
+  max-height: 50px;
+}
+
+.location-search {
+  display: flex;
+  
+}
+
+.location-search input {
+  padding: 5px;
+  border: 1px solid;
+  border-radius: 50px;
+  width: 200px;
+  
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px; 
+}
+
+.location-search button {
+  background-color: #fff;
+  border: 1px solid;
+  border-radius: 50px;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+  cursor: pointer;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  cursor: pointer;
+  
+}
+
+.menu li {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+  
+}
+
+.menu a {
+  text-decoration: none;
+  color: #222;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+/*   Hero section  */
+/* .hero-section2 {
+  /* background-image: url("img/2.webp"); */
+  /* background-size: cover;
+  height: 550px;
+  display: flex; */
+/* }   */
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  background-color: #f0f0f0;
+}
+.search-bar {
+  width: 100%;
+  max-width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  outline: none;
+}
+.search-btn {
+  padding: 10px 20px;
+  background-color: #aeb4bb;
+  color: #111010;
+  /* border: none; */
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  cursor: pointer;
+  margin-left: 0px;
+}
+
+
+
+/* Contact seection */
+
+.contact h2 {
+  margin-bottom: 3rem;
+  
+}
+
+.contact form {
+  max-width: 70rem;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contact form .input-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  color: #222;
+  background: #dcdee1;
+  border-radius: .8rem;
+  margin: .7rem 0;
+}
+
+.contact form .input-box input {
+  width: 49%;
+}
+
+.contact form textarea {
+  resize: none;
+}
+
+.contact form .btn {
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+/* slideshow.css */
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+.slideshow-container img {
+  width: 100%;
+  height: 400px;
+}
+
+
+/* ... Header styles as before ... */
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.footer-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.footer-menu li {
+  margin-right: 20px;
+}
+
+.footer-menu li:last-child {
+  margin-right: 0;
+}
+
+.footer-menu a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* styles.css */
+
+/* Header styles as before */
+
+
+@media (max-width: 991px) {
+  .contact {
+    min-height: auto; 
+ }
+}
+
+@media (max-width: 450px)
+{
+    html {
+        font-size: 50%;
+    }
+    .contact from .input-box input {
+        width: 100%;
+    }
+}
+
+/* Add a media query for screens smaller than 768px */
+@media (max-width: 768px) {
+  header {
+      padding: 5px 0;
+  }
+
+  nav {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .logo img {
+      max-height: 40px;
+  }
+
+  .location-search {
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .location-search input {
+      width: 100%;
+      margin-bottom: 10px;
+      border-radius: 3px;
+  }
+
+  .menu {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .menu li {
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+
+  .menu a {
+      font-size: 16px;
+  }
+
+  .hero-section2 {
+      height: auto;
+  }
+
+  .text-section h1, .text-section h3 {
+      font-size: 24px;
+      text-align: center;
+  }
+
+  .text-section p {
+      font-size: 14px;
+  }
+
+  .slideshow-container img {
+      height: auto;
+  }
+}
+
+/* Add a media query for screens smaller than 480px */
+@media (max-width: 480px) {
+  .menu a {
+      font-size: 14px;
+  }
+
+  footer {
+      padding: 10px 0;
+  }
+}
